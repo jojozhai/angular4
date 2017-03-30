@@ -64,7 +64,8 @@ export class ProductDetailComponent implements OnInit {
       this.subscription = null;
     }else{
       this.isWatched = true;
-      var wsUrl = "ws://localhost:3085";
+      //var wsUrl = "ws://localhost:3085";
+      var wsUrl = "ws://"+window.location.hostname+"/websocket";
       this.subscription = this.wsService.createObservableSocket(wsUrl, this.product.id)
         .subscribe(
           products => {
