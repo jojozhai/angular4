@@ -1,0 +1,6 @@
+<app-price-quote (priceChange)="priceQuoteHandler($event)"></app-price-quote>
+<div>
+  这是在报价组件外部，股票代码是{{priceQuote.stockCode}},
+  股票价格是{{priceQuote.lastPrice | number:'2.2-2'}}
+</div>
+

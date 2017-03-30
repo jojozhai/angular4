@@ -1,0 +1,38 @@
+<form [formGroup]="formModel" (submit)="onSubmit()">
+  <div>
+    用户名:<input [class.hasError]="formModel.get('username').invalid && formModel.get('username').touched" type="text" formControlName="username">
+  </div>
+  <div [hidden]="formModel.get('username').valid || formModel.get('username').untouched">
+    <div [hidden]="!formModel.hasError('required', 'username')">
+      用户名是必填项
+    </div>
+    <div [hidden]="!formModel.hasError('minlength', 'username')">
+      用户名最小长度是5
+    </div>
+  </div>
+  <div>
+    手机号:<input type="number" formControlName="mobile">
+  </div>
+  <div [hidden]="!formModel.get('mobile').pending">
+    正在校验手机号合法性
+  </div>
+  <div [hidden]="formModel.get('mobile').valid || formModel.get('mobile').pristine">
+    <div [hidden]="!formModel.hasError('mobile', 'mobile')">
+      请输入正确的手机号
+    </div>
+  </div>
+  <div formGroupName="passwordsGroup">
+    <div>密码:<input type="password" formControlName="password"></div>
+    <div [hidden]="!formModel.hasError('minlength', ['passwordsGroup','password'])">
+      密码最小长度是6
+    </div>
+    <div>确认密码:<input type="password" formControlName="pconfirm"></div>
+    <div [hidden]="!formModel.hasError('equal', 'passwordsGroup')">
+      {{formModel.getError('equal', 'passwordsGroup')?.description}}
+    </div>
+  </div>
+  <div>
+    {{formModel.status}}
+  </div>
+  <button type="submit">注册</button>
+</form>

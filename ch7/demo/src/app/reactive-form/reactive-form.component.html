@@ -1,0 +1,19 @@
+
+<form [formGroup]="formModel" (submit)="onSubmit()">
+  <input formControlName="username">
+  <div formGroupName="dateRange">
+    起始日期:<input type="date" formControlName="from">
+    截止日期:<input type="date" formControlName="to">
+  </div>
+  <div>
+    <ul formArrayName="emails">
+      <li *ngFor="let e of this.formModel.get('emails').controls; let i=index;">
+        <input type="text" [formControlName]="i">
+      </li>
+    </ul>
+    <button type="button" (click)="addEmail()">增加Email</button>
+  </div>
+  <div>
+    <button type="submit">保存</button>
+  </div>
+</form>

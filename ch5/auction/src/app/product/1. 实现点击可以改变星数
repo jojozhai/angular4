@@ -1,0 +1,90 @@
+1. 实现点击可以改变星数
+
+clickStar(index: number) {
+	this.rating = index + 1;
+	this.ngOnInit();
+}
+
+<span *ngFor="let star of stars; let i = index;" class="glyphicon glyphicon-star"
+  [class.glyphicon-star-empty]="star" (click)="clickStar(i)"></span>
+  
+
+2. 增加一个只读属性
+
+ @Input()
+  private readonly:boolean = true;
+
+  clickStar(index:number) {
+    if(!this.readonly){
+      this.rating = index + 1;
+      this.ngOnInit();
+    }
+  }
+
+3. 修改 product component, 加入 评价 div
+
+ newComment:string;
+  newRating:number = 5;
+
+
+  <div>
+    <div><app-stars [rating]="newRating" [readonly]="false"></app-stars></div>
+    <div>
+      <textarea [(ngModel)]="newComment"></textarea>
+    </div>
+    <div>
+      <button class="btn" (click)="addComment()">提交</button>
+    </div>
+  </div>
+
+  addComment() {
+    let comment = new Comment(0, this.product.id, new Date().toISOString(), "someone", this.newRating, this.newComment);
+    this.comments.unshift(comment);
+  }
+
+4. 双向绑定rating
+ 
+ starComponent
+
+ @Output()
+  private ratingChange: EventEmitter<number> = new EventEmitter();
+
+  clickStar(index:number) {
+    if(!this.readonly){
+      this.rating = index + 1;
+      this.ngOnInit();
+     ----->> this.ratingChange.emit(this.rating);
+    }
+  }
+
+5. 控制评论是否显示的按钮。
+
+ isCommentHidden:boolean = true;
+
+ <div>
+    <button (click)="isCommentHidden = !isCommentHidden"
+     class="btn btn-success">发表评论</button>
+  </div>
+  <div [hidden]="isCommentHidden">
+
+6. 重置表单
+
+ this.newComment = null;
+ this.newRating = 5;
+ this.isCommentHidden = true;
+ 
+ 将star组件 onInit的实现写到 onChanges里, 去掉 clickStar 中对 ngOnInit 的调用。
+
+7. 更新商品的平均得分。
+
+ let sum = this.comments.reduce((sum, comment) => sum + comment.rating, 0);
+ this.product.rating = sum/this.comments.length;
+ 
+ <span>{{rating | number:'1.0-2'}}星</span>
+
+
+
+
+
+
+

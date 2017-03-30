@@ -1,0 +1,18 @@
+
+<input [formControl]="stockFilter">
+
+<form [formGroup]="formModel">
+  <div formGroupName="dateRange">
+    <input type="date" formControlName="from">
+    <input type="date" formControlName="to">
+  </div>
+
+  <div>
+    <ul formArrayName="emails">
+      <li *ngFor="let e of formModel.get('emails').controls; let i=index">
+        <input [formControlName]="i">
+      </li>
+      <button type="button" (click)="addEmail()">增加Email地址</button>
+    </ul>
+  </div>
+</form>

@@ -1,0 +1,16 @@
+<div>
+  商品信息
+</div>
+<ul>
+  <li *ngFor="let product of products | async">
+    {{product.title}}
+  </li>
+</ul>
+
+<form #f="ngForm" (ngSubmit) = "getProductByID(f.value)" >
+  <label for="productID">商品ID</label>
+  <input id="productID" type="number" name = "productID" ngModel>
+  <button type="submit">查找商品</button>
+</form>
+
+<h4>{{productTitle}}:{{productPrice}}</h4>

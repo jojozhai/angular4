@@ -1,0 +1,27 @@
+<a [routerLink]="['/']">页头</a>
+<a [routerLink]="['/footer']">页脚</a>
+<router-outlet></router-outlet>
+
+<!--<div class="wrapper">-->
+  <!--<h2>我是父组件</h2>-->
+  <!--<div>这个div定义在父组件中</div>-->
+  <!--<app-child>-->
+    <!--<app-header #header class="header"></app-header>-->
+    <!--<app-footer #footer class="footer"></app-footer>-->
+  <!--</app-child>-->
+<!--</div>-->
+
+<!--演示ngChanges-->
+<!--<div class="parent">-->
+  <!--<h2>父组件</h2>-->
+  <!--<div>Greeting: <input type="text" [(ngModel)]="greeting"></div>-->
+  <!--<div>User name: <input type="text" [(ngModel)]="user.name"></div>-->
+  <!--<div>{{age}}</div>-->
+  <!--<app-change [greeting]="greeting" [user]="user"></app-change>-->
+<!--</div>-->
+
+<!--演示ngViewInit和ngViewChecked-->
+<!--<app-child1 #child1></app-child1>-->
+<!--<app-child1 #child2></app-child1>-->
+<!--<button (click)="child2.greet('Jerry')">调用child2的greet方法</button>-->
+<!--{{message}}-->

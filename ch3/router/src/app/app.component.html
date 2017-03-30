@@ -1,0 +1,7 @@
+<a [routerLink]="['']">Home</a>
+<a [routerLink]="['/product', 1]" [queryParams]="{test: true}">Product Details</a>
+<input type="button" value="Product Details" (click)="toProductDetail()">
+<a [routerLink]="[{outlets: {aux: 'chat'}}]">Open Chat</a>
+<a [routerLink]="[{outlets: {aux: null}}]">Close Chat</a>
+<router-outlet></router-outlet>
+<router-outlet name="aux"></router-outlet>
