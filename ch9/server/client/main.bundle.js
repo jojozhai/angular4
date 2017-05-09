@@ -396,8 +396,8 @@ var ProductDetailComponent = (function () {
         }
         else {
             this.isWatched = true;
-            //var wsUrl = "ws://localhost:3085";
-            var wsUrl = "ws://" + window.location.hostname + "/websocket";
+            var wsUrl = "ws://localhost:3085";
+            //var wsUrl = "ws://"+window.location.hostname+"/websocket";
             this.subscription = this.wsService.createObservableSocket(wsUrl, this.product.id)
                 .subscribe(function (products) {
                 var product = products.find(function (p) { return p.productId === _this.product.id; });

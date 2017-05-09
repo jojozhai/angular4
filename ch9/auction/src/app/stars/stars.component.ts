@@ -8,12 +8,12 @@ import {Component, OnInit, Input, Output, EventEmitter, OnChanges, SimpleChanges
 export class StarsComponent implements OnInit, OnChanges {
 
   @Input()
-  private rating:number = 0;
+  rating:number = 0;
 
   @Output()
-  private ratingChange:EventEmitter<number> = new EventEmitter();
+  ratingChange:EventEmitter<number> = new EventEmitter();
 
-  private stars: boolean[];
+  stars: boolean[];
 
   @Input()
   private readonly:boolean = true;

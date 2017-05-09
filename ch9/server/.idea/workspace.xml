@@ -18,11 +18,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="auction_server.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="auction_server.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/auction_server.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-399">
-              <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+            <state relative-caret-position="65">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#46#81#0" expanded="true" />
@@ -31,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+            <state relative-caret-position="180">
+              <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -44,9 +44,30 @@
       <file leaf-file-name="auction_server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build/auction_server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
+            <state relative-caret-position="465">
               <caret line="31" column="15" lean-forward="false" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
-              <folding />
+              <folding>
+                <marker date="1491956596000" expanded="true" signature="345:878" ph="{...}" />
+                <marker date="1491956596000" expanded="true" signature="424:526" ph="{...}" />
+                <marker date="1491956596000" expanded="true" signature="570:669" ph="{...}" />
+                <marker date="1491956596000" expanded="true" signature="744:854" ph="{...}" />
+                <marker date="1491956596000" expanded="true" signature="929:1021" ph="{...}" />
+                <marker date="1491956596000" expanded="true" signature="1081:1182" ph="{...}" />
+                <marker date="1491956596000" expanded="true" signature="1240:1297" ph="{...}" />
+                <marker date="1491956596000" expanded="true" signature="1426:1674" ph="{...}" />
+                <marker date="1491956596000" expanded="true" signature="1475:1670" ph="{...}" />
+                <marker date="1491956596000" expanded="true" signature="1730:2370" ph="{...}" />
+                <marker date="1491956596000" expanded="true" signature="1766:1988" ph="{...}" />
+                <marker date="1491956596000" expanded="true" signature="1907:1943" ph="{...}" />
+                <marker date="1491956596000" expanded="true" signature="2136:2239" ph="{...}" />
+                <marker date="1491956596000" expanded="true" signature="2146:2235" ph="{&quot;productId&quot;: pid...}" />
+                <marker date="1491956596000" expanded="true" signature="2406:2674" ph="{...}" />
+                <marker date="1491956596000" expanded="true" signature="2473:2652" ph="{...}" />
+                <marker date="1491956596000" expanded="true" signature="2733:3016" ph="{...}" />
+                <marker date="1491956596000" expanded="true" signature="2805:2994" ph="{...}" />
+                <marker date="1491956596000" expanded="true" signature="3063:3587" ph="[...]" />
+                <marker date="1491956596000" expanded="true" signature="3604:3862" ph="[...]" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,8 +88,8 @@
         <option value="$PROJECT_DIR$/client/index.html" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/build/auction_server.js" />
-        <option value="$PROJECT_DIR$/server/auction_server.ts" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/server/auction_server.ts" />
       </list>
     </option>
   </component>
@@ -82,10 +103,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="148" />
-    <option name="y" value="48" />
+    <option name="x" value="285" />
+    <option name="y" value="155" />
     <option name="width" value="1440" />
-    <option name="height" value="815" />
+    <option name="height" value="823" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -102,7 +123,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -160,13 +180,14 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -180,6 +201,18 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -269,34 +302,38 @@
       <workItem from="1490176398640" duration="2509000" />
       <workItem from="1490661431117" duration="718000" />
       <workItem from="1490764778566" duration="1348000" />
-      <workItem from="1490855231585" duration="770000" />
+      <workItem from="1490855231585" duration="1713000" />
+      <workItem from="1490929203071" duration="561000" />
+      <workItem from="1491007610267" duration="1409000" />
+      <workItem from="1491317780206" duration="798000" />
+      <workItem from="1491956568957" duration="33000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39562000" />
+    <option name="totallyTimeSpent" value="43306000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="148" y="48" width="1440" height="815" extended-state="0" />
-    <editor active="false" />
+    <frame x="285" y="155" width="1440" height="823" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17899929" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22832981" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32103825" sideWeight="0.5116841" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3195021" sideWeight="0.48831588" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31874144" sideWeight="0.48831588" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -638,28 +675,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build/auction_server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
+        <state relative-caret-position="465">
           <caret line="31" column="15" lean-forward="false" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/auction_server.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-399">
-          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#46#81#0" expanded="true" />
+            <marker date="1491956596000" expanded="true" signature="345:878" ph="{...}" />
+            <marker date="1491956596000" expanded="true" signature="424:526" ph="{...}" />
+            <marker date="1491956596000" expanded="true" signature="570:669" ph="{...}" />
+            <marker date="1491956596000" expanded="true" signature="744:854" ph="{...}" />
+            <marker date="1491956596000" expanded="true" signature="929:1021" ph="{...}" />
+            <marker date="1491956596000" expanded="true" signature="1081:1182" ph="{...}" />
+            <marker date="1491956596000" expanded="true" signature="1240:1297" ph="{...}" />
+            <marker date="1491956596000" expanded="true" signature="1426:1674" ph="{...}" />
+            <marker date="1491956596000" expanded="true" signature="1475:1670" ph="{...}" />
+            <marker date="1491956596000" expanded="true" signature="1730:2370" ph="{...}" />
+            <marker date="1491956596000" expanded="true" signature="1766:1988" ph="{...}" />
+            <marker date="1491956596000" expanded="true" signature="1907:1943" ph="{...}" />
+            <marker date="1491956596000" expanded="true" signature="2136:2239" ph="{...}" />
+            <marker date="1491956596000" expanded="true" signature="2146:2235" ph="{&quot;productId&quot;: pid...}" />
+            <marker date="1491956596000" expanded="true" signature="2406:2674" ph="{...}" />
+            <marker date="1491956596000" expanded="true" signature="2473:2652" ph="{...}" />
+            <marker date="1491956596000" expanded="true" signature="2733:3016" ph="{...}" />
+            <marker date="1491956596000" expanded="true" signature="2805:2994" ph="{...}" />
+            <marker date="1491956596000" expanded="true" signature="3063:3587" ph="[...]" />
+            <marker date="1491956596000" expanded="true" signature="3604:3862" ph="[...]" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        <state relative-caret-position="180">
+          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/auction_server.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#46#81#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,5 +1,5 @@
-import {Component, OnInit} from "@angular/core";
-import {ProductService, Product} from "../shared/product.service";
+import {Component, Input, OnInit} from "@angular/core";
+import {Product, ProductService} from "../shared/product.service";
 import "rxjs/Rx";
 import {Observable} from "rxjs";
 
@@ -10,7 +10,8 @@ import {Observable} from "rxjs";
 })
 export class ProductComponent implements OnInit {
 
-  private products: Observable<Product[]>
+  @Input()
+  products: Observable<Product[]>
 
   private imgUrl = 'http://placehold.it/320x150';
 
@@ -19,6 +20,7 @@ export class ProductComponent implements OnInit {
   }
 
   ngOnInit() {
+
     this.products = this.productService.getProducts();
 
     this.productService.searchEvent.subscribe(
