@@ -31,17 +31,8 @@
     <ul class="sidebar-menu">
       <li class="header">HEADER</li>
       <!-- Optionally, you can add icons to the links -->
-      <li *ngFor="let menu of menus" [class.active]="currentMenuId == menu.id">
-        <a href="javascript:;" (click)="nav(menu)">
-          <i class="fa fa-link"></i> <span>{{menu.name}}</span>
-          <span class="pull-right-container" *ngIf="menu.childs">
-              <i class="fa fa-angle-left pull-right"></i>
-          </span>
-        </a>
-        <ul class="treeview-menu" *ngIf="menu.childs">
-          <li *ngFor="let child of menu.childs"><a href="javascript:;" routerLink="{{child.link}}">{{child.name}}</a></li>
-        </ul>
-      </li>
+      <li *ngFor="let menu of menus" [class.active]="currentMenuId == menu.id" ><a href="javascript:;" (click)="nav(menu)"><i class="fa fa-link"></i> <span>{{menu.name}}</span></a></li>
+
     </ul>
     <!-- /.sidebar-menu -->
   </section>

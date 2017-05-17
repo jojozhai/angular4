@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from "@angular/core";
+import {SocketService} from "./socket.service";
+import {environment} from "../../environments/environment";
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  title = environment.appTitle;
+
+  messageCount = 0;
+
+  constructor(public socketService:SocketService) {}
 
   ngOnInit() {
+    this.socketService.createObservableSocket("ws://localhost:8085")
+      .map(event => JSON.parse(event))
+      .subscribe(
+        event => this.messageCount = event.messageCount
+      );
   }
 
 }
