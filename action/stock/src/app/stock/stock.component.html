@@ -1,0 +1,46 @@
+<div class="box">
+  <div class="box-header with-border">
+    <a class="btn btn-sm btn-success" routerLink="/stock/0"><span class="glyphicon glyphicon-plus"></span>新建</a>
+
+    <div class="box-tools" style="padding-top: 5px">
+      <div class="input-group input-group-sm" style="width: 250px;">
+        <input type="text" name="table_search" class="form-control pull-right" placeholder="股票名称">
+        <div class="input-group-btn">
+          <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.box-header -->
+  <div class="box-body">
+    <table class="table table-bordered">
+      <tr>
+        <th style="width: 10px">#</th>
+        <th>股票名称</th>
+        <th width="200px">股票价格</th>
+        <th width="200px">股票星级</th>
+        <th width="200px">操作</th>
+      </tr>
+      <tr *ngFor="let stock of stocks; let i = index;">
+        <td>{{i + 1}}</td>
+        <td>{{stock.title}}</td>
+        <td>{{stock.price}}</td>
+        <td><app-star [rating]="stock.rating"></app-star></td>
+        <td>
+          <a class="btn btn-warning btn-xs" (click)="update(stock)"><span class="glyphicon glyphicon-pencil"></span>修改</a>
+          <a class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span>删除</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- /.box-body -->
+  <div class="box-footer clearfix">
+    <ul class="pagination pagination-sm no-margin pull-right">
+      <li><a href="#">&laquo;</a></li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">&raquo;</a></li>
+    </ul>
+  </div>
+</div>

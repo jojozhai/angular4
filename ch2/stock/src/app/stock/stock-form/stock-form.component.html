@@ -4,7 +4,7 @@
   </div>
   <!-- /.box-header -->
   <!-- form start -->
-  <form [formGroup]="formModel" class="form-horizontal">
+  <form [formGroup]="formModel" class="form-horizontal" novalidate>
     <div class="box-body">
       <div class="form-group" [class.has-error]="formModel.get('name').touched && (formModel.hasError('minlength','name') || formModel.hasError('required','name'))">
         <label for="name" class="col-sm-2 control-label">股票名称</label>
