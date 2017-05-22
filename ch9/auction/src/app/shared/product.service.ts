@@ -1,4 +1,4 @@
-import {Injectable, EventEmitter} from "@angular/core";
+import {EventEmitter, Injectable} from "@angular/core";
 import {Http, URLSearchParams} from "@angular/http";
 import {Observable} from "rxjs";
 import "rxjs/Rx";
@@ -32,6 +32,7 @@ export class ProductService {
   }
 
   private encodeParams(params: ProductSearchParams) {
+
     return Object.keys(params)
       .filter(key => params[key])
       .reduce((sum:URLSearchParams, key:string) => {

@@ -88,7 +88,7 @@ export class StockFormComponent implements OnInit {
     this.formModel.value.categories = chineseCategories;
     this.formModel.value.rating = this.stock.rating;
     console.log(this.formModel.value);
-    //this.router.navigateByUrl('/stock');
+    this.router.navigateByUrl('/stock');
   }
 
 }

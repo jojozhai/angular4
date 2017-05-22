@@ -44,7 +44,7 @@ const routeConfig: Routes = [
     FormsModule,
     HttpModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(routeConfig)
+    RouterModule.forRoot(routeConfig, {useHash: true})
   ],
   providers: [StockService, SocketService],
   bootstrap: [AppComponent]
